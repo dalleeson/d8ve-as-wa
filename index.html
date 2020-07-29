@@ -91,10 +91,67 @@
                               </div>
                          </div>
                     </div>
-
                </div>
           </div>
      </section>
+<SCRIPT>
+function startvmsinvisstusub() {
+    alert("HTTP POST to WebHook for VisStuSub complete")
+    var _url = 'https://b6b31be3-219a-4cfb-ae5b-16b29defbe95.webhook.uks.azure-automation.net/webhooks?token=ZwqNawEoX3TDHi3ltE31Tgdx1aYXJlI6CnrHQhLqbuk%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+function stopvmsinvisstusub() {
+    alert("HTTP POST to WebHook for VisStuSub complete")
+    var _url = 'https://b6b31be3-219a-4cfb-ae5b-16b29defbe95.webhook.uks.azure-automation.net/webhooks?token=y2lR%2fswKMRGhcsngUjcNl2iyeXAg2SWUwSeS4SzaO7o%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+function startvmsinvisstusub2() {
+    alert("HTTP POST to WebHook for VisStuSub2 complete")
+    var _url = 'https://3a34325b-afcf-491a-bb27-d2ef8310069b.webhook.we.azure-automation.net/webhooks?token=2fOdd%2f1WiNR5z3DIoLB7bnCa6%2fhkgL%2f4D3r0s6A1hzs%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+function stopvmsinvisstusub2() {
+    alert("HTTP POST to WebHook for VisStuSub2 complete")
+    var _url = 'https://3a34325b-afcf-491a-bb27-d2ef8310069b.webhook.we.azure-automation.net/webhooks?token=EzwShdatZ6mP0erHBBSRXh2A%2bvEcNvQe%2b3mnXpaxrPk%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+function d8veeglaA() {
+    alert("HTTP POST to WebHook for d8veegla-A complete")
+    var _url = 'https://prod-14.uksouth.logic.azure.com:443/workflows/6aa4d4ddc10a49d09464919b9c7ddf70/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ohQrSYJzHZYMfe34NfCTp7izWICHvCK6EHH14yEDE5A';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+</SCRIPT>
+
+<br>
+<br>
+<p style="color:white; font-size:30px">Start / Stop VMs</p>
+<button onclick="startvmsinvisstusub(); startvmsinvisstusub2();"><b>Start VMs</b></button> 
+<button onclick="stopvmsinvisstusub(); stopvmsinvisstusub2();"><b>Stop VMs</b></button>
+<br>
+<br>
+<p style="color:white; font-size:30px">Trigger Logic App</p>
+<button onclick="d8veeglaA()"><b>Publish to Event Grid via Logic App d8veegla-A</b></button> 
+
 
      <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>
