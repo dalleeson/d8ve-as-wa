@@ -131,6 +131,23 @@ function stopvmsinvisstusub2() {
     });
 }
 
+function startvmsinFTEIntSub() {
+    alert("HTTP POST to WebHook for FTEIntSub complete")
+    var _url = 'https://b57244ae-52cb-4bb7-9100-8866f6961598.webhook.we.azure-automation.net/webhooks?token=PrTkkx48IPVggoSIeXejQcHfHf7AgvRbWsh8vtJ%2fF44%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
+
+function stopvmsinFTEIntSub() {
+    alert("HTTP POST to WebHook for FTEIntSub complete")
+    var _url = 'https://b57244ae-52cb-4bb7-9100-8866f6961598.webhook.we.azure-automation.net/webhooks?token=U9jXzhHeKc%2fTKwN5rANac1vIFyMvwyvXxLQn0LToADw%3d';
+    $.ajax({
+        type: 'POST',
+        url: _url
+    });
+}
 function d8veeglaA() {
     alert("HTTP POST to WebHook for d8veegla-A complete")
     var _url = 'https://prod-14.uksouth.logic.azure.com:443/workflows/6aa4d4ddc10a49d09464919b9c7ddf70/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ohQrSYJzHZYMfe34NfCTp7izWICHvCK6EHH14yEDE5A';
@@ -145,8 +162,8 @@ function d8veeglaA() {
 <br>
 <br>
 <p style="color:white; font-size:30px">Start / Stop Resources</p>
-<button onclick="startvmsinvisstusub(); startvmsinvisstusub2();"><b>Start Everything!</b></button> 
-<button onclick="stopvmsinvisstusub(); stopvmsinvisstusub2();"><b>Stop Everything!</b></button>
+<button onclick="startvmsinvisstusub(); startvmsinvisstusub2(); startvmsinFTEIntSub()"><b>Start Everything!</b></button> 
+<button onclick="stopvmsinvisstusub(); stopvmsinvisstusub2(); stopvmsinFTEIntSub()"><b>Stop Everything!</b></button>
 <br>
 <br>
 <p style="color:white; font-size:30px">Trigger Logic App</p>
